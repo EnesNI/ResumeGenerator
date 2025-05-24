@@ -1,0 +1,90 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1c1f26, #2f3542);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Form Styling */
+form#resumeForm {
+  background-color: #2d2f36;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+form#resumeForm input,
+form#resumeForm textarea,
+form#resumeForm button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form#resumeForm input,
+form#resumeForm textarea {
+  background-color: #1e2027;
+  color: #fff;
+}
+
+form#resumeForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form#resumeForm button {
+  background-color: #00cec9;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form#resumeForm button:hover {
+  background-color: #00b894;
+}
+
+/* A4 Canvas Styling */
+#a4 {
+  background-color: #fff;
+  color: #000;
+  width: 794px; /* 210mm at 96dpi */
+  height: 1123px; /* 297mm at 96dpi */
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Editable Elements */
+.editable {
+  position: absolute;
+  cursor: move;
+  padding: 5px;
+  border: 1px dashed transparent;
+  transition: border 0.2s;
+}
+
+.editable:focus,
+.editable:hover {
+  border: 1px dashed #3498db;
+  outline: none;
+}
+
+/* Editable Images */
+.editable img {
+  border-radius: 8px;
+  object-fit: cover;
+}

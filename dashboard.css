@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #f4f4f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 12px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.sidebar-button:hover {
+    background-color: #e0e0e0;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bottom-section {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.main-content {
+    margin-left: 220px; /* Same as the sidebar width */
+    padding: 20px;
+}

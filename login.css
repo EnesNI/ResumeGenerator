@@ -1,0 +1,124 @@
+/* Base Reset & Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #0d0d0d;
+    background-image: url('Black Gradient Technology YouTube Banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* Login Container */
+.container {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+.container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #a445b2, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: #eee;
+    font-size: 1rem;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 212, 255, 0.6);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(142, 45, 226, 0.5);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(74, 0, 224, 0.7);
+}
+
+/* Links & Messages */
+p {
+    margin-top: 18px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+p a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.success {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff5555;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}

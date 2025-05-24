@@ -1,0 +1,81 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container card */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Subheadings */
+h2 {
+  color: #007BFF;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs and text */
+p {
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Preformatted AI Insights block */
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Link back */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+    /* Make body a flex container to center content */
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+     align-items: center;
+    text-align: center;
+  
+  
+}
+
+/* Header Text */
+header h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+    background: linear-gradient(90deg, #a445b2, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #cccccc;
+    margin-bottom: 2.5em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Call-to-Action Button */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: white;
+    padding: 16px 36px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(142, 45, 226, 0.6);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(74, 0, 224, 0.8);
+    outline: none;
+}
+
+/* Optional Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 14px 28px;
+    }
+}
